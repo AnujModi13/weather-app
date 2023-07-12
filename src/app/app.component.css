@@ -1,0 +1,81 @@
+.container
+{
+
+display:flex;
+width:450px;
+background-color: aliceblue;
+height: 650px;
+border-radius: 1rem;
+justify-content: center;
+margin-top: 2rem;
+}
+.upper{
+
+  justify-content: center;
+  height: 50%;
+
+}
+.image{
+  height:100%;
+width: 450px;
+background-image: url('../assets/noaa-ZVhm6rEKEX8-unsplash.jpg');
+background-position: center;
+background-size: contain;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+display:flex ;
+justify-content: center;
+align-items: center;
+z-index: -10;
+color: white;
+opacity: 1.4;
+font-size: xx-large;
+font-family:Arial, Helvetica, sans-serif;
+}
+.image .header{
+  z-index: 10;
+}
+
+.more{
+  height:230px;
+  justify-items: center;
+  width:390px;
+  background-color: brown;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-left: 30px;
+
+}
+
+.lower{
+background-color: turquoise;
+height:330px;
+justify-content: center;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+}
+
+.img{
+  height: 50px;
+  border-radius: 100rem;
+
+}
+
+.info{
+
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.data{
+  color:white;
+  font-size: x-large;
+
+}
+
+.tag{
+  color: white;
+}
+
