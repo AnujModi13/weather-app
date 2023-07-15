@@ -24,16 +24,22 @@ background-size: contain;
 border-top-left-radius: 1rem;
 border-top-right-radius: 1rem;
 display:flex ;
+
+flex-direction: column;
 justify-content: center;
 align-items: center;
 z-index: -10;
 color: white;
-opacity: 1.4;
+opacity: 2;
 font-size: xx-large;
 font-family:Arial, Helvetica, sans-serif;
 }
 .image .header{
   z-index: 10;
+}
+
+.city{
+
 }
 
 .more{
@@ -44,12 +50,29 @@ font-family:Arial, Helvetica, sans-serif;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 
+}
+.low{
+  margin-right: 15px;
+  margin-left: 15px;
+display: flex;
+text-align: center;
+}
+
+.mini{
+display: flex;
+flex-direction: column;
+padding-right: 10px;
 }
 
 .lower{
 background-color: turquoise;
 height:330px;
+
 justify-content: center;
 border-bottom-left-radius: 1rem;
 border-bottom-right-radius: 1rem;
@@ -79,3 +102,9 @@ border-bottom-right-radius: 1rem;
   color: white;
 }
 
+.search{
+  display: flex;
+  justify-content: center;
+  height:30px;
+  margin-top: 10px;
+}

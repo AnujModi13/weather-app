@@ -1,41 +1,50 @@
+<div class="search">
+  <input type="text" placeholder="Search City" [(ngModel)]="searchItem" (change)="withCity()">
+  <button (click)="withCity()">Search</button>
+</div>
 <div class="container">
   <div class="main">
     <div class="upper">
 
       <div class="image">
         <div class="city">
-          location_city</div><br>
-        <div class="header">HEllo Indian</div>
+          {{weather.location.name}}</div>
+        <div class="header">{{weather.current.temp_c}} 	&#x2103;</div>
       </div>
     </div>
     <div class="lower">
       <div class="info">More Information....</div>
 
       <div class="more">
-        <div class="morer1">
+        <!-- <div class="morer1"> -->
           <div class="low">
-            <img src="../assets/temperature.png" alt="" srcset="" class="img" />
+            <div class="mini">
+            <img src="../assets/temperature.png" alt="" height="10" class="img" />
             <div class="tag">min</div>
-            <span class="data"> 20 *C</span>
           </div>
-          <div class="high">
-            <img src="../assets/hot.png" alt="" srcset="" class="img" />
+            <span class="data"> {{weather.current.temp_c}} 	&#x2103;</span>
+          </div>
+          <div class="low">
+            <div class="mini">
+            <img src="../assets/hot.png" alt="" srcset="" height="10" class="img" />
             <div class="tag">max</div>
-            <span class="data"> 20 *C</span>
           </div>
+            <span class="data"> {{weather.current.feelslike_c}} 	&#x2103;</span>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="morer2"> -->
+          <div class="low">
+            <div class="mini">
+          <img src="../assets/humidity.png" alt="" srcset="" height="10" class="img">
+          <div class="tag">humidity</div></div>
+          <span class="data">{{weather.current.humidity }}% </span>
         </div>
-        <div class="morer2">
-          <div class="humidity">
-          <img src="../assets/humidity.png" alt="" srcset="" class="img">
-          <div class="tag">humidity</div>
-          <span class="data"> 20 *C</span>
+        <div class="low"><div class="mini">
+          <img src="../assets/wind.png" alt="" srcset="" height="10" class="img">
+          <div class="tag">wind</div></div>
+          <span class="data"> {{weather.current.wind_kph}} km/h</span>
         </div>
-        <div class="wind">
-          <img src="../assets/wind.png" alt="" srcset="" class="img">
-          <div class="tag">wind</div>
-          <span class="data"> 20 *C</span>
-        </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
