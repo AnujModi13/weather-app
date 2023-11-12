@@ -1,15 +1,15 @@
 <div class="search">
-  <input type="text" placeholder="Search City" [(ngModel)]="searchItem" (change)="withCity()">
-  <button (click)="withCity()">Search</button>
+  <input class='text-box' type="text" placeholder="Search City" [(ngModel)]="searchItem" (change)="withCity()">
+  <button class='search-button' (click)="withCity()">Search</button>
 </div>
-<div class="container">
+<div class="container" *ngIf="weather">
   <div class="main">
     <div class="upper">
 
       <div class="image">
         <div class="city">
-          {{weather.location.name}}</div>
-        <div class="header">{{weather.current.temp_c}} 	&#x2103;</div>
+          {{weather.name}}</div>
+        <div class="header">{{weather.main.temp}} 	&#x2103;</div>
       </div>
     </div>
     <div class="lower">
@@ -22,14 +22,14 @@
             <img src="../assets/temperature.png" alt="" height="10" class="img" />
             <div class="tag">min</div>
           </div>
-            <span class="data"> {{weather.current.temp_c}} 	&#x2103;</span>
+            <span class="data"> {{weather.main.temp_min}} 	&#x2103;</span>
           </div>
           <div class="low">
             <div class="mini">
             <img src="../assets/hot.png" alt="" srcset="" height="10" class="img" />
             <div class="tag">max</div>
           </div>
-            <span class="data"> {{weather.current.feelslike_c}} 	&#x2103;</span>
+            <span class="data"> {{weather.main.temp_max}} 	&#x2103;</span>
           </div>
         <!-- </div> -->
         <!-- <div class="morer2"> -->
@@ -37,12 +37,12 @@
             <div class="mini">
           <img src="../assets/humidity.png" alt="" srcset="" height="10" class="img">
           <div class="tag">humidity</div></div>
-          <span class="data">{{weather.current.humidity }}% </span>
+          <span class="data">{{weather.main.humidity }}% </span>
         </div>
         <div class="low"><div class="mini">
           <img src="../assets/wind.png" alt="" srcset="" height="10" class="img">
           <div class="tag">wind</div></div>
-          <span class="data"> {{weather.current.wind_kph}} km/h</span>
+          <span class="data"> {{weather.wind.speed}} km/h</span>
         </div>
         <!-- </div> -->
       </div>

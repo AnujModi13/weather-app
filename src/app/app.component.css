@@ -1,6 +1,5 @@
 .container
 {
-
 display:flex;
 width:450px;
 background-color: aliceblue;
@@ -8,7 +7,10 @@ height: 650px;
 border-radius: 1rem;
 justify-content: center;
 margin-top: 2rem;
+box-shadow: 0 0 5px 5px rgba(0,176,255,1) ;
+
 }
+
 .upper{
 
   justify-content: center;
@@ -16,21 +18,21 @@ margin-top: 2rem;
 
 }
 .image{
-  height:100%;
+height:100%;
 width: 450px;
-background-image: url('../assets/noaa-ZVhm6rEKEX8-unsplash.jpg');
+background-image: url('../assets/img-1.avif');
 background-position: center;
-background-size: contain;
+background-size: cover;
 border-top-left-radius: 1rem;
 border-top-right-radius: 1rem;
 display:flex ;
-
 flex-direction: column;
 justify-content: center;
 align-items: center;
 z-index: -10;
-color: white;
-opacity: 2;
+color:rgb(82 9 3);
+opacity: 1;
+font-weight: bold;
 font-size: xx-large;
 font-family:Arial, Helvetica, sans-serif;
 }
@@ -46,7 +48,6 @@ font-family:Arial, Helvetica, sans-serif;
   height:230px;
   justify-items: center;
   width:390px;
-  background-color: brown;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   margin-left: 30px;
@@ -54,6 +55,7 @@ font-family:Arial, Helvetica, sans-serif;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding-top: 10px;
 
 }
 .low{
@@ -70,7 +72,7 @@ padding-right: 10px;
 }
 
 .lower{
-background-color: turquoise;
+background-color:#99d9ff6e;
 height:330px;
 
 justify-content: center;
@@ -87,24 +89,53 @@ border-bottom-right-radius: 1rem;
 .info{
 
   padding: 20px;
-  font-size: 20px;
-  color: white;
+  font-size: 25px;
+  color: #522121;
   font-weight: bold;
 }
 
 .data{
-  color:white;
+  color:#4a1818;
   font-size: x-large;
+  font-weight: bold;
 
 }
 
 .tag{
-  color: white;
+  color: #cd0000;
 }
 
 .search{
   display: flex;
   justify-content: center;
-  height:30px;
+  height:40px;
   margin-top: 10px;
+}
+
+
+.search-button{
+  background-color: rgb(143, 10, 10);
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.text-box{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  height: 38px;
+  width: 200px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  text-align: justify ;
+  padding-left: 15px;
+
 }

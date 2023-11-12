@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  background-color: blueviolet;
+  background: rgb(17,0,36);
+  background: radial-gradient(circle, rgba(17,0,36,0.7455357142857143) 0%, rgba(9,36,121,0.8687850140056023) 29%, rgba(0,176,255,1) 100%);
   justify-content: center;
   display: flex;
 }

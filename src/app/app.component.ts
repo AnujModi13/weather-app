@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { APIService } from './service/api.service';
-import { weather1 } from './model/weather';
+import { Welcome } from './model/weather';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,8 +8,8 @@ import { weather1 } from './model/weather';
 })
 export class AppComponent implements OnInit{
   title = 'weather-app';
-  weather!: weather1;
-  city = 'Mumbai' ;
+  weather!: Welcome;
+  city = 'mumbai' ;
   searchItem: string='';
   constructor(private apiservice: APIService) {}
 

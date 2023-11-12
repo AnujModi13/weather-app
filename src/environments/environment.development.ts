@@ -1,8 +1,8 @@
 export const environment = {
   production:false,
-  baseUrl:'https://weatherapi-com.p.rapidapi.com/current.json',
-  XRapidAPIKeylabel:'X-RapidAPI-Key',
-  XRapidAPIKeyvalue:'8369c10dc8msh57903953c2fdf8ap1c3c63jsn8783d8c2d2ab',
+  baseUrl:'https://api.openweathermap.org/data/2.5/weather',
+  XRapidAPIKeylabel:'appid',
+  XRapidAPIKeyvalue:'21932cd9e992a7b05e858bae58e55dc5',
   XRapidAPIHostlabel:'X-RapidAPI-Host',
   XRapidAPIHostvalue:"weatherapi-com.p.rapidapi.com",
 };
